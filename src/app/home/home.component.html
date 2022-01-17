@@ -1,0 +1,26 @@
+<div fxFlex="100" fxLayout="row wrap">
+<h4 fxFlex="100">Responsive cards example</h4>
+<div fxLayout="row wrap" fxLayout.xs="column-reverse" fxLayoutGap.xs="20px" fxLayoutAlign="space-between center"
+>
+<mat-card class="example-card" fxFlex="30" fxFlex.sm="45" *ngFor="let num of [1,2,3,4,5,6]">
+    <mat-card-header>
+      <mat-card-title>Angular Flex Card {{num}}</mat-card-title>
+      <mat-card-subtitle>API using Flexbox CSS + mediaQuery</mat-card-subtitle>
+    </mat-card-header>
+    <img mat-card-image src="../../assets/images/logo.png" alt="Angular">
+    <mat-card-content>
+      <p>
+        Angular Flex Layout provides a sophisticated layout API using Flexbox CSS + mediaQuery. This module provides Angular developers with component layout features using a custom Layout API, mediaQuery observables, and injected DOM flexbox-2016 CSS stylings.
+
+
+      </p>
+    </mat-card-content>
+    <mat-card-actions>
+      <button mat-button>LIKE</button>
+      <button mat-button>SHARE</button>
+    </mat-card-actions>
+  </mat-card>
+  
+</div>
+
+</div>
