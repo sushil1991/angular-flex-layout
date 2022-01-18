@@ -11,6 +11,8 @@ import { AppRoutingModule } from './app-routing.module';
 import { HomeComponent } from './home/home.component';
 import { ServicesComponent } from './services/services.component';
 import {MatCardModule} from '@angular/material/card'
+import { HomeService } from './home/_services/home.service';
+import { HttpClientModule } from '@angular/common/http';
 
 @NgModule({
   declarations: [
@@ -28,9 +30,10 @@ import {MatCardModule} from '@angular/material/card'
     FlexLayoutModule,
     FormsModule,
     ReactiveFormsModule,
-    MatCardModule
+    MatCardModule,
+    HttpClientModule
   ],
-  providers: [],
+  providers: [HomeService],
   bootstrap: [AppComponent]
 })
 export class AppModule { }
